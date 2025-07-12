@@ -23,7 +23,7 @@ $ roslaunch netft_rdt_driver ft_sensor.launch
 ```
 
 The force-torque information will be published on the topic: **/ft_sensor/netft_data**.
-The message type is **geometry_msgs/WrenchStamped**.
+The message type is **geometry_msgs/msg/WrenchStamped**.
 ```
 rostopic echo /ft_sensor/netft_data
 
@@ -45,15 +45,15 @@ wrench:
     z: 0.22924
 ```
 
-There are four arguments the node takes, see the  [**launch file**](https://github.com/epfl-lasa/net-ft-ros/blob/master/launch/ft_sensor.launch)  for more details.
+There are four arguments the node takes, see the  [**launch file**](https://github.com/Ryan-Stapleton/net-ft-ros2/blob/main/launch/ft_sensor_launch.py)  for more details.
 
-* **ROS service**
+* **ROS2 service**
 ```
  rosservice call /ft_sensor/bias_cmd "cmd: 'bias'"
 ```
 To call the service in C++ code make sure to include the service message type:
 ```
-#include "netft_rdt_driver/String_cmd.h"
+#include "netft_rdt_driver/string_cmd.hpp"
 ...
 ros::ServiceClient ft_client = nh.serviceClient<netft_rdt_driver::String_cmd>("/ft_sensor/bias_cmd");
 netft_rdt_driver::String_cmd srv;
