@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>netft_rdt_driver</name>
+  <version>0.0.0</version>
+  <description>
+    Driver for NetFT sensor that uses Raw Data Transfer (RDT) protocol.
+  </description>
+
+  <maintainer email="guillaume@todo.todo">Derek King</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>rclcpp</build_depend>
+  <build_depend>diagnostic_updater</build_depend>
+  <build_depend>diagnostic_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <build_depend>rosidl_default_generators</build_depend>
+  <build_depend>boost</build_depend>
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>diagnostic_updater</exec_depend>
+  <exec_depend>diagnostic_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>tf2</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <exec_depend>boost</exec_depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+  </export>
+</package>
