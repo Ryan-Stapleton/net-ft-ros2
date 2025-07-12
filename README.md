@@ -1,5 +1,8 @@
 # net-ft-ros2
+[![Build Status](https://travis-ci.org/epfl-lasa/net-ft-ros.svg?branch=master)](https://travis-ci.org/epfl-lasa/net-ft-ros)
+
 ROS2 package for the ATI 6-axis force torque sensor.
+
 ## Hardware setup
 
 TODO: description of the ATI setup, with ATI box, how to connect to ethernet and ping the box.
